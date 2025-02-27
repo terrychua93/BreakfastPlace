@@ -1,14 +1,7 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';  // Example component
+import { HomeComponent } from './sections/home.component';
 
-// Define your routes array here
 export const routes: Routes = [
-  { path: '', component: AppComponent },
-  // Add more routes as needed
-//   {
-//     path: 'error',
-//     component: MainLayoutComponent,
-//     loadChildren: () =>
-//       import('./modules/error/error.module').then((m) => m.ErrorModule),
-//   },
+    {path: '', redirectTo: 'home', pathMatch: 'full'},
+    {path: 'home', component: HomeComponent},
 ];
