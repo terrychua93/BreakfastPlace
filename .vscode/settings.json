@@ -1,0 +1,9 @@
+// {
+//   "scss.lint.unknownAtRules": "ignore",
+//   "[scss]": {
+//     "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
+//   },
+//   "files.associations": {
+//   "*.css": "tailwindcss",
+//   }
+// }

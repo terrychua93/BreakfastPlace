@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:host ::ng-deep .custom-navbar {
+   background-color: rgb(0, 33, 22) !important;
+}
+  
+  :host ::ng-deep .p-menubar {
+    border: none;
+    border-radius: 0px;
+    @apply bg-gradient-to-r from-blue-500 to-purple-500 shadow-md text-white;
+  }
+  
