@@ -17,6 +17,10 @@ jobs:
    - name: test integration
      run: echo "test integration"
      shell: bash
-   - name: test integration 2
-     run: echo "test integration 2"
-     shell: bash
+
+ goodbye:
+   runs-on: ubuntu-latest
+   steps:
+     - name: test integration 2
+       run: echo "test integration 2"
+       shell: bash
