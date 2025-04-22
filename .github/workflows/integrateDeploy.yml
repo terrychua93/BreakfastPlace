@@ -1,0 +1,22 @@
+name: Integration Deploy workflow
+
+on:
+ push:
+   branches:
+       - main
+ pull_request: 
+   branches:
+        - main
+ workflow_dispatch:
+
+jobs:
+ hello:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
+   - name: test integration
+     run: echo "test integration"
+     shell: bash
+   - name: test integration 2
+     run: echo "test integration 2"
+     shell: bash
