@@ -14,9 +14,12 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
-   - name: test integration
-     run: echo "test integration"
-     shell: bash
+   - uses: actions/setup-node@v3
+     with:
+       node-version: '18'
+   - run: npm ci
+   - run: playwright install --with-deps
+   - run: npm playwright test
 
  goodbye:
    runs-on: ubuntu-latest
