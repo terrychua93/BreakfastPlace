@@ -19,8 +19,8 @@ jobs:
        node-version: '18'
    - run: npm ci
    - run: npx playwright install --with-deps
-   - run: npx playwright test
    - run: npx ts-node --loader ts-node/esm src/tests/playwright-test.ts
+   - run: npx playwright test
 
  goodbye:
    runs-on: ubuntu-latest
