@@ -13,11 +13,14 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022"
+    "target": "ESNext",
+    "module": "ESNext"
   },
+  "include": ["src/**/*.ts"],          // Include all TypeScript files under src/
+  "exclude": ["node_modules"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
