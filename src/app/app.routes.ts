@@ -1,10 +1,12 @@
-import { Routes } from '@angular/router';
-import { HomeComponent } from './sections/home/home.component';
-import { ProfileComponent } from './sections/profile/profile.component';
+import { provideRouter, Routes, withComponentInputBinding } from '@angular/router';
+import { LandingComponent } from './landing/landing.component';
 
 export const routes: Routes = [
-    {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path: 'home', component: HomeComponent},
-    {path: 'profile', component: ProfileComponent},
+    {path: '', redirectTo: '', pathMatch: 'full'},
+    {path: '', component: LandingComponent},
+];
 
+
+export const routerProviders = [
+    provideRouter(routes, withComponentInputBinding())
 ];

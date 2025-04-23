@@ -1,0 +1,46 @@
+// .bg-cover{
+//     background-image: url("/assets/images/breakfast-bg.png");
+//     background-repeat: no-repeat;
+//     filter: blur(8px);
+//     height: 100%;
+// }
+@reference "tailwindcss";
+
+.home-section {
+    @apply relative bg-cover bg-center;
+    background-image: url('/assets/images/black-coffee-whole-wheat.avif');
+    
+    /* Add transparency */
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.1); /* Adjust opacity as needed */
+    }
+        /* Ensure text remains above the overlay */
+    .content {
+        @apply relative z-1 text-black text-center;
+    }
+}
+  
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .animate-slideUp {
+    animation: slideUp 1.2s ease-out;
+  }

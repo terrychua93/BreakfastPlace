@@ -1,0 +1,39 @@
+@reference "tailwindcss";
+
+:host ::ng-deep .p-menubar {
+  border: none;
+  border-radius: 0px;
+  @apply fixed top-0 left-0 w-full bg-transparent;
+  padding: 0 50px;
+
+}
+
+:host ::ng-deep .bg-transparent .p-menubar {
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent */
+  @apply transition-all duration-500 ease-in-out;
+}
+
+:host ::ng-deep .bg-white .p-menubar {
+  background-color: white !important;
+  @apply transition-all duration-500 ease-in-out;
+}
+  
+
+.custom-menubar .p-menubar-start,
+.custom-menubar .p-menubar-end {
+  flex: 1;
+}
+
+.menu-logo {
+  width: 50px;
+}
+
+// .active-link {
+//   @apply text-red-500 font-bold border-b-2 border-red-500;
+// }
+
+:host ::ng-deep .p-menubar-root-list {
+  @apply flex ml-auto; /* Align items to the end */
+}
+
+
