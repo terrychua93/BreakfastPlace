@@ -9,4 +9,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'breakfast-family';
+
+  constructor() {
+    console.log('AppComponent constructor!');
+  }
 }
