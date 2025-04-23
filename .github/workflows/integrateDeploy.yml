@@ -20,6 +20,7 @@ jobs:
    - run: npm ci
    - run: npx playwright install --with-deps
    - run: npx playwright test
+   - run: npx ts-node --loader ts-node/esm src/tests/playwright-test.ts
 
  goodbye:
    runs-on: ubuntu-latest
