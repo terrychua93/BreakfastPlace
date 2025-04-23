@@ -18,8 +18,8 @@ jobs:
      with:
        node-version: '18'
    - run: npm ci
-   - run: playwright install --with-deps
-   - run: npm playwright test
+   - run: npx playwright install --with-deps
+   - run: npx playwright test
 
  goodbye:
    runs-on: ubuntu-latest
